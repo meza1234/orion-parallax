@@ -9,7 +9,7 @@ body {
 }
 
 .text-primary {
-    color: #fed136;
+    color: #cadaec;
 }
 
 p {
@@ -171,7 +171,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #fed136;
+    /* color: #fed136; */
 }
 
 .navbar-default .navbar-brand:hover,
@@ -186,8 +186,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #3d92f9;
+    background-color: #3d92f9;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -196,7 +196,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #fed136;
+    background-color: #3d92f9;
 }
 
 .navbar-default .nav li a {
@@ -210,19 +210,19 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #fed136;
+    color: #3d92f9;
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #fff;
-    background-color: #fed136;
+    color: #3d92f9;
+    background-color:rgba(255,255,255,0);
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #fec503;
+    color: #3d92f9;
+    background-color:rgba(255,255,255,0);
 }
 
 @media(min-width:768px) {
@@ -247,7 +247,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
+        padding: 0;
         background-color: #222;
     }
 
@@ -336,7 +336,7 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 24px 0;
     }
 }
 
@@ -854,4 +854,120 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #fed136;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header {
+    height: 680px;
+}
+div#myCarousel {
+    height: 680px;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.intro-heading{
+	font-size:48px;
+}
+.carousel-indicators li{
+    background-color:#636363;
+    width: 12px;
+    height: 12px;
+    margin: 1px;
+    border:none;
+}
+
+
+
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 1px;
+    background-color: #bfbfbf;
+    border:none;
+}
+
+a.left.carousel-control {
+    display: none;
+}
+.carousel-caption {}
+a.right.carousel-control {
+    display: none;
+}
+
+@media screen and (min-width:768px){
+    header .intro-text .intro-heading{
+        font-size:48px;
+    }
+    .intro-text a.btn.btn-default {
+        width:170px;
+        height: 60px;
+        padding: 19px;
+        text-transform: uppercase;
+        font-size:14px;
+    }
+    .intro-text a.btn.btn-default:last-child{
+        border-radius: 0px 5px 5px 0px;
+        margin:0;
+        background-color:#3d92f9;
+        border:none;
+        color:#fff;
+    }
+    .intro-text a.btn.btn-default:nth-last-child(2){
+        border-radius: 5px 0px 0px 5px;
+        margin:0;
+        background-color:#59a3fc;
+        border:none;
+        color:#fff;
+    }
+}
+
+a.left.carousel-control {
+    display: none;
+}
+a.right.carousel-control {
+    display: none;
+}
+#services {
+    border-top: 1px solid #d7dbe0;
+    border-bottom: 1px solid #d7dbe0;
+    background: #e7eef6;
+    padding-top: 60px;
+}
+#portfolio {
+    padding-top: 50px;
+}
+#about {
+    padding-top: 50px;
+}
+#team {
+    padding-top: 50px;
+}
+
+@media screen and (min-width:768px){
+    .carousel-indicators {
+        bottom: 100px;
+    }
+} 
+@media screen and (min-width:768px) and (max-width:991px){
+    .navbar-default .nav li a {
+        padding: 18px 5px;
+        }
 }

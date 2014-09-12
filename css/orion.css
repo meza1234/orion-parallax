@@ -1,4 +1,8 @@
-﻿
+﻿ul{
+    padding: 0;
+}
+
+
 body {
     overflow-x: hidden;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -46,7 +50,7 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
@@ -326,12 +330,13 @@ section h2.section-heading {
 }
 
 section h3.section-subheading {
-    margin-bottom: 75px;
+    margin-bottom: 60px;
     text-transform: none;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-style: italic;
+    font-family: 'Open sans';
+    font-size: 14px;
+    /* font-style: italic; */
     font-weight: 400;
+    color: #a1a1a1;
 }
 
 @media(min-width:768px) {
@@ -354,7 +359,8 @@ section h3.section-subheading {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 350px;
+    /* max-height: 220px; */
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -362,7 +368,7 @@ section h3.section-subheading {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(254,209,54,.9);
+    background: rgba(52,152,219,.9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -394,15 +400,23 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-caption {
     margin: 0 auto;
-    padding: 25px;
-    max-width: 400px;
+    padding: 9px;
+    max-width: 120px;
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(0,0,0,0.65);
+    position: absolute;
+    max-height: 35px;
+    bottom: 12px;
+    left: 12px;
+    width: 120px;
+    height: 35px;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
     text-transform: none;
+    font-size: 14px;
+    color: #fff!important;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
@@ -629,7 +643,7 @@ section h3.section-subheading {
 
 .team-member img {
     margin: 0 auto;
-    border: 7px solid #fff;
+    /* border: 7px solid #fff; */
 }
 
 .team-member h4 {
@@ -648,9 +662,10 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
+    background-image: url(../img/mapa.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 section#contact .section-heading {
@@ -663,15 +678,16 @@ section#contact .form-group {
 
 section#contact .form-group input,
 section#contact .form-group textarea {
-    padding: 20px;
+    padding: 10px;
 }
 
 section#contact .form-group input.form-control {
-    height: auto;
+    height: 30px;
 }
 
 section#contact .form-group textarea.form-control {
-    height: 236px;
+    height: 150px;
+    resize: none;
 }
 
 section#contact .form-control:focus {
@@ -739,12 +755,12 @@ ul.social-buttons li a {
     display: block;
     width: 40px;
     height: 40px;
-    border-radius: 100%;
+    /* border-radius: 100%; */
     font-size: 20px;
     line-height: 40px;
     outline: 0;
     color: #fff;
-    background-color: #222;
+    /* background-color: #222; */
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -753,7 +769,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #fed136;
+    background-color: rgba(255,255,255,0);
 }
 
 .btn:focus,
@@ -884,7 +900,7 @@ div#myCarousel {
 }
 
 .intro-heading{
-	font-size:48px;
+    font-size:48px;
 }
 .carousel-indicators li{
     background-color:#636363;
@@ -953,6 +969,7 @@ a.right.carousel-control {
 }
 #portfolio {
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 #about {
     padding-top: 50px;
@@ -970,4 +987,223 @@ a.right.carousel-control {
     .navbar-default .nav li a {
         padding: 18px 5px;
         }
+}
+h4.service-heading {
+    font-size: 20px;
+    font-family: 'montserrat';
+    letter-spacing: -0.25pt;
+    color:#555;
+}
+.text-muted {
+    color: #88929d;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+a.left.inactive, a.right.inactive {
+    color: #777;
+}
+
+a.right, a.left {
+    color: #555;
+}
+
+a.left.inactive, a.right.inactive {
+    color: #777;
+    cursor: default;
+}
+
+a.right, a.left {
+    color: #555;
+}
+.flechas-port {
+    width: 200px;
+    height: 43px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-top: 20px;
+}
+#portfolio .container {
+    position: relative;
+}
+
+section#testimonials {
+    border-top: 1px solid #d7dbe0;  border-bottom: 1px solid #d7dbe0;  background: #e7eef6;  padding-top: 60px;
+}
+
+.testimonios-image {
+    float: none;
+}
+
+.testimonios-image img {
+    width: 141px;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+.testimonios-panel{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    margin-left: 20px;
+    float:left;
+    min-width:200px;
+    /* width:200px; */
+}
+
+.timeline-body{
+     text-align: left;
+}
+
+@media screen and (min-width:664px){
+    .testimonios-image img {
+    width: 80px;
+}
+.testimonios-panel {
+    width: 476px;
+    height: 167px;
+    float: left;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    margin-left: 20px;
+}
+.testimonios-image {
+    float: left;
+    display: inline;
+}
+
+.timeline-body {
+    font-size: 15px;
+    letter-spacing: -0.25px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.testimonios li {
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+}
+}
+
+
+
+li {
+    list-style: none;
+}
+
+p.texto-nombre {
+    font-size: 18px;
+}
+p.texto-nombre > span {
+    font-size: 12px;
+}
+
+img.img-responsive.img-circle {
+    max-width: 122px;
+}
+.social-buttons a i.fa.fa-facebook {
+    color: #3498db;
+    font-size: 18pt;
+}
+.social-buttons a i.fa.fa-twitter {
+    color: #66c2ff;
+    font-size: 18pt;
+}
+.social-buttons a i.fa.fa-dribbble{
+    color:#ff6aaa;
+    font-size:18pt;
+}
+img.img-responsive.img-circle {
+    max-width: 122px;
+}
+.social-buttons a i.fa.fa-facebook {
+    color: #3498db;
+    font-size: 18pt;
+}
+.social-buttons a i.fa.fa-twitter {
+    color: #66c2ff;
+    font-size: 18pt;
+}
+.social-buttons a i.fa.fa-dribbble{
+    color:#ff6aaa;
+    font-size:18pt;
+}
+.team-member h4 {
+    color:#363636;
+    font-size:19px;
+}
+.team-member .text-muted{
+    color:#b7b7b7;
+    font-size:12px;
+}
+.sign-in {
+    padding: 5px;
+    border-radius:5px;
+    width: 90%;
+    text-align:center;
+    background-color: #3d92f9;
+    margin:0 auto;
+}
+
+.navbar-default .navbar-nav .sign-in > a{
+    color:#fff !important;
+}
+@media screen and (min-width:768px){
+    .sign-in {
+        width: 79px;
+        background-color: #3d92f9;
+        padding: 5px;
+        height: 32px;
+        border-radius:5px;
+        margin-top:8px;
+    }
+    .navbar-default .navbar-nav .sign-in > a{
+        padding:1px;
+        color:#fff !important;
+    }
+}
+aside.clients {
+    background-color: #111111;
+}
+footer {
+    background-color: #000;
+}
+input#name {
+    height: 20px;
+    padding: 5px;
+}
+section#contact {
+    padding-top: 60px;
+}
+@media screen{
+    .clients img.img-responsive.img-centered {
+        max-height: 57px;
+    }
+}
+footer .container .row .col-md-4:last-child {
+    text-align:left;
+}
+
+footer .container .row .col-md-4:last-child {
+    text-align:left;
+}
+input.mail {
+    width: 300px;
+    background: #363636;
+    border: none;
+    padding: 4px;
+    padding-left: 8px;
+}
+input.go {
+    padding: 4px;
+    background-color: #555;
+    border: none;
+    margin-left: -3px;
+    color: #fafafa;
 }
